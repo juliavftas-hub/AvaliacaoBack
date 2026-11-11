@@ -121,7 +121,7 @@ app.delete("/tarefa/delete", (req, res) => {
     
     const tarefa = banco.find(tarefa => tarefa.id === id);
 
-        tarefa.concluido = req.body.concluido;
+        tarefa.concluida = req.body.concluida;
         res.send(tarefa);
 
     }) // é algo aqui, num sei se te ajuda mas pas
